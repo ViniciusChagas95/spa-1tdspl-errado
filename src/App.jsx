@@ -1,35 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Cabecalho from "./components/Cabecalho";
+import Conteudo from "./components/Conteudo";
+import Rodape from "./components/Rodape";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  //Área declarativa
+  // let nome = "João";
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      {/* Vamos criar um cabeçalho com um header, um h1 com um título e uma lista ul com itens com links. */}
+      <Cabecalho />
 
-export default App
+      {/* Vamos criar uma Seção com uma section, uma div com 2 parágrafos cada um com 3 linhas de lorem e depois dos parágrafos uma imagem. */}
+      <Conteudo />
+      {/* Vamos criar um rodapé com uma div, uma lista ul e 3 itens com links para redes sociais, um parágrafo com o texto de direitos autorais e o código do símbolo de copyright. */}
+      <Rodape />
+    </>
+  );
+}
