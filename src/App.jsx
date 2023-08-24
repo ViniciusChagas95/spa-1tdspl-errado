@@ -1,10 +1,12 @@
 import Cabecalho from "./components/Cabecalho";
 import Conteudo from "./components/Conteudo";
 import Rodape from "./components/Rodape";
+import viteLogo from "./assets/vite.svg";
 
 export default function App() {
   //Área declarativa
   // let nome = "João";
+  let viteAlt = "Logo do Vite";
 
   return (
     <>
@@ -12,7 +14,7 @@ export default function App() {
       <Cabecalho />
 
       {/* Vamos criar uma Seção com uma section, uma div com 2 parágrafos cada um com 3 linhas de lorem e depois dos parágrafos uma imagem. */}
-      <Conteudo />
+      <Conteudo viteLogoProps={viteLogo} viteAltProps={viteAlt} />
       {/* Vamos criar um rodapé com uma div, uma lista ul e 3 itens com links para redes sociais, um parágrafo com o texto de direitos autorais e o código do símbolo de copyright. */}
       <Rodape />
     </>
