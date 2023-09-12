@@ -10,10 +10,10 @@ export default function Produtos() {
         <table style={{borderCollapse:"collapse" , border:"2px solid #ffffff"}}>
             <thead>
                 <tr>
-                    <th style={{border:"2px solid #ffffff"}}>ID</th>
-                    <th style={{border:"2px solid #ffffff"}}>NOME</th>
-                    <th style={{border:"2px solid #ffffff"}}>DESCRIÇÃO</th>
-                    <th style={{border:"2px solid #ffffff"}}>PREÇO</th>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>DESCRIÇÃO</th>
+                    <th>PREÇO</th>
                 </tr>
             </thead>
 
@@ -21,10 +21,10 @@ export default function Produtos() {
                 {ListaProdutos.map((produto,indice)=>(
 
                       <tr key={indice}>
-                        <td style={{border:"2px solid #ffffff"}}>{produto.id}</td>
-                        <td style={{border:"2px solid #ffffff"}}>{produto.nome}</td>
-                        <td style={{border:"2px solid #ffffff"}}>{produto.desc}</td>
-                        <td style={{border:"2px solid #ffffff"}}>{produto.preco}</td>
+                        <td>{produto.id}</td>
+                        <td>{produto.nome}</td>
+                        <td>{produto.desc}</td>
+                        <td>{produto.preco}</td>
                       </tr>
 
                 ))}
