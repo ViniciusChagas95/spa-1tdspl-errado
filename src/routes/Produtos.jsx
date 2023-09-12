@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom"
 import { ListaProdutos } from "../components/ListaProdutos";
-
+import classeEstilos from "./Produtos.modules.css"
 export default function Produtos() {
 
   return (
@@ -7,7 +8,7 @@ export default function Produtos() {
         <h1>Produtos de INFORMÁTICA - FIPAPI</h1>
         <p>Os Melhores Produtos do Mercado</p>
         
-        <table style={{borderCollapse:"collapse" , border:"2px solid #ffffff"}}>
+        <table className={classeEstilos.estiloTabela}>
             <thead>
                 <tr>
                     <th>ID</th>
